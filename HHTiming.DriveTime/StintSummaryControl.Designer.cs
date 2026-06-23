@@ -71,6 +71,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_PitWindowContent = new HHDev.Core.WinForms.Controls.LabelWithAutoSizeText(this.components);
             this.lbl_PitWindowHeading = new HHDev.Core.WinForms.Controls.LabelWithAutoSizeText(this.components);
+            this.lbl_PitWindowSub = new HHDev.Core.WinForms.Controls.LabelWithAutoSizeText(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_PitWindow.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -630,12 +631,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_PitWindowContent, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbl_PitWindowHeading, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_PitWindowSub, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.78F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.22F));
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(676, 94);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -664,6 +667,20 @@
             this.lbl_PitWindowHeading.TabIndex = 15;
             this.lbl_PitWindowHeading.Text = "Minimum Stint Time (No Extra Stop)";
             this.lbl_PitWindowHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
+            // lbl_PitWindowSub
+            //
+            this.lbl_PitWindowSub.AutoSize = true;
+            this.lbl_PitWindowSub.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_PitWindowSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.96364F);
+            this.lbl_PitWindowSub.Location = new System.Drawing.Point(3, 71);
+            this.lbl_PitWindowSub.Name = "lbl_PitWindowSub";
+            this.lbl_PitWindowSub.ReferenceText = "";
+            this.lbl_PitWindowSub.Size = new System.Drawing.Size(670, 23);
+            this.lbl_PitWindowSub.TabIndex = 17;
+            this.lbl_PitWindowSub.Text = "-";
+            this.lbl_PitWindowSub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_PitWindowSub.Visible = false;
             // 
             // StintSummaryControl
             // 
@@ -725,5 +742,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private HHDev.Core.WinForms.Controls.LabelWithAutoSizeText lbl_PitWindowContent;
         private HHDev.Core.WinForms.Controls.LabelWithAutoSizeText lbl_PitWindowHeading;
+        private HHDev.Core.WinForms.Controls.LabelWithAutoSizeText lbl_PitWindowSub;
     }
 }
